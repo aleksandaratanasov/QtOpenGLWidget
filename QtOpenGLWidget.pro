@@ -8,10 +8,13 @@ QT       += core gui opengl
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-QMAKE_CXXFLAGS += -std=c++11
+//QMAKE_CXXFLAGS += -std=c++11
+CONFIG += c++11
+CONFIG += release
 
 TARGET = QtOpenGLWidget
-TEMPLATE = app
+#TEMPLATE = app
+TEMPLATE = lib
 
 
 SOURCES += \

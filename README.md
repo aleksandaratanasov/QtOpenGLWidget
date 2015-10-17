@@ -4,11 +4,14 @@ terrain generator application (currently under development). I decide to separat
 the OpenGL widget's basic functionalities that I have implemented so that others 
 can use it without the overhead of the rest of my application.
 
+The widget consists of a top-level widget that also includes some controls and 
+an embedded QGLWidget for viewing a 3D scene.
+
+The project offers following features:
+
 * OpenGL integration
 * Basic navigation inside the OpenGL scene using a combination of Qt mouse 
 event for rotation, translation and zooming
 * Basic navigation and control outside the widget using buttons and a combobox
 
-###TODO###
-Conver the project to a shared library so that it can be easily integrated into 
-other projects
+You can edit the project file to build either the shared library or the application
