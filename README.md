@@ -14,4 +14,16 @@ The project offers following features:
 event for rotation, translation and zooming
 * Basic navigation and control outside the widget using buttons and a combobox
 
-You can edit the project file to build either the shared library or the application
+You can edit the project file to build either the shared library or the application. It consists of two major parts:
+
+* OpenGLContainer - inherits directly from `QGLWidget` and `QGLFunctions` (the second one is optional though if not 
+used you will be greatly restricted to what OpenGL you can create and display). This component is the major part of this 
+project and contains all the functionality that you require in order to integrate OpenGL in your Qt application including 
+various slots and signals that allow other components of your application to interact with it
+* QtOpenGlWidget - this is more of a demo and shows an example of how components that are not part of `OpenGLContainer` widget 
+can interact with it. This whole part is completely optional and you can remove it without reducing the functionality of the 
+embedded widget mentioned above.
+
+![Screenshot](qtopenglwidget.png "QtOpenGlWidget description")
+
+
